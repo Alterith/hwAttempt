@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+void wc ( FILE *infile, char *inname);
+
+int main (int argc, char *argv[]) {
+
+	//printf("%s is the name of the file maybe\n", argv[1]);
+	int i;
+	for(i=1;i<argc;i++){
+		char* name = argv[i]; 
+		FILE* file = fopen(name,"r");
+		wc(file, name)
+;
+	}
+	return 0;
+}
+
+void wc( FILE *infile, char *inname) {
+	
+	printf("%s: ",inname);
+}
