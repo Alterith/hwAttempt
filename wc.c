@@ -27,7 +27,6 @@ void wc( FILE *infile, char *inname) {
 	
 	FILE* f = infile;
 	char sChar;
-	char pChar = ' ';
 	bool wStart = false;
 	while((sChar=fgetc(f))!=EOF)
 	{

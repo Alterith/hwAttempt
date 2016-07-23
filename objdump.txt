@@ -1,0 +1,12 @@
+1)file format: elf64-x86-64
+Architecture:i386:x86-64,64 bit architecture.
+
+2)data and code segments
+
+3)code segment as not executed yet 0x0000000000400700
+
+4)code segment as not executed yet 0x0000000000400686
+
+5)They were both loaded onto the stack frame and both the wc function was loaded after the main thus explaining why main has an earlier address than wc.
+
+6) No i do not and that is because there is quite literally no use for them until execution as no data need be stored temporarly.
