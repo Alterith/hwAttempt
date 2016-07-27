@@ -1,0 +1,31 @@
+1) The main and recur function addresses and the stuff static variable address. The first 2 are defined in the code segment and the last one is defined in the data segment.
+
+2)Code segment which is used to persistently store functions and the data segment wich is the data that need to be avialable upon the start of runtime.
+
+3)down
+
+4)It is 48 bytes 
+
+5)At the bottom of the virtual address space, it grows downwards.
+
+6)Yes
+
+7)|--------------|
+  |              |
+  |..............|
+  |stack         |
+  |    |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |              |
+  |--------------|

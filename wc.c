@@ -5,6 +5,10 @@
 
 void wc ( FILE *infile, char *inname);
 
+int totalW = 0;
+int totalB = 0;
+int totalL = 0;
+
 int main (int argc, char *argv[]) {
 
 	//printf("%s is the name of the file maybe", argv[1]);
@@ -15,6 +19,15 @@ int main (int argc, char *argv[]) {
 		wc(file, name);		
 		fclose(file);
 	}
+
+	if(argc>2){
+		printf("%5d",totalL);
+		printf("%5d",totalW);
+		printf("%7d",totalB);
+		printf("%10s\n","total");
+
+	}
+
 	return 0;
 }
 
@@ -42,10 +55,13 @@ void wc( FILE *infile, char *inname) {
     			wStart=true; //inside of word.
  		}
 	}
-	printf("%d",lCount);
-	printf("\t%d",wCount);
-	printf("\t%d",bCount);
-	printf("\t%s\n",inname);
+	totalL = totalL+lCount;
+	totalW = totalW+wCount;
+	totalB = totalB+bCount;
+	printf("%5d",lCount);
+	printf("%5d",wCount);
+	printf("%7d",bCount);
+	printf("%10s\n",inname);
 	
 }
 

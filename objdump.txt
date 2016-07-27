@@ -7,6 +7,8 @@ Architecture:i386:x86-64,64 bit architecture.
 
 4)code segment as not executed yet 0x0000000000400686
 
-5)They were both loaded onto the stack frame and both the wc function was loaded after the main thus explaining why main has an earlier address than wc.
+//The addresses in both 3 and 4 are the addresses of each function in the executable stored on the persistent storage device.
+
+5)They were both loaded onto the stack frame and both the wc function was loaded after the main thus explaining why main has an earlier address than wc as is the same in this case where main was stored in the executable before wc
 
 6) No i do not and that is because there is quite literally no use for them until execution as no data need be stored temporarly.
